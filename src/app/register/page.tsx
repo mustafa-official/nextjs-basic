@@ -13,7 +13,8 @@ const Register = () => {
   const handleRegister = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const data = await axios.post("/api/register", { userData });
+    const data = await axios.post("/api/register", userData);
+    console.log("from line 17", data.data);
   };
   return (
     <div className="hero bg-base-200 min-h-screen">
