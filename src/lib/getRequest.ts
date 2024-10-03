@@ -10,7 +10,7 @@ export  async function getPosts() {
 }
 
 export async function getPhotos(){
-    const res = await fetch('https://jsonplaceholder.typicode.com/photos');
+    const res = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=10');
     const data = await res.json();
     return data;
 }
